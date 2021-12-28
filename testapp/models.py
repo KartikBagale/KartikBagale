@@ -6,3 +6,6 @@ class Employee(models.Model):
     ename   = models.CharField(max_length=50)
     esal    = models.FloatField()
     city    = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.ename
